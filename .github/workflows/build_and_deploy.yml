@@ -7,7 +7,7 @@ jobs:
     name: Code Formatting Tests
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - name: Set up Python 3.7
       uses: actions/setup-python@v1
       with:
@@ -24,7 +24,7 @@ jobs:
     name: Type Tests
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - name: Set up Python 3.7
       uses: actions/setup-python@v1
       with:
@@ -41,7 +41,7 @@ jobs:
     name: Unit Tests
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - name: Set up Python 3.7
       uses: actions/setup-python@v1
       with:
@@ -67,7 +67,7 @@ jobs:
          # Maps port 8000 on service container to port 8000 on host VM
          - 8000:8000
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - id: files
         uses: jitterbit/get-changed-files@v1
       - name: set_training
